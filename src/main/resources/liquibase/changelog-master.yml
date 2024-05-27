@@ -1,4 +1,4 @@
 databaseChangeLog:
   - include:
-      file: liquibase/scripts/scripts.sql
+      file: liquibase/scripts/scripts.sq
 

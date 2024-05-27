@@ -2,15 +2,12 @@ package pro.sky.telegrambot.entity;
 
 
 
-import com.pengrad.telegrambot.request.BaseRequest;
-import liquibase.pro.packaged.R;
-import liquibase.pro.packaged.T;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class NotificationTask{
+public class NotificationTask {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

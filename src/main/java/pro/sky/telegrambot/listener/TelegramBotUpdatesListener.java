@@ -75,7 +75,9 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                         SendResponse response = telegramBot.execute(notificationSendMessage);
                         NotificationTask save = notificationTaskRepository.save(task);
                     } else {
-                        throw new IllegalArgumentException("Я же показывал как надо, ты забыл? Ладно, напомню: 01.01.2022 20:00 Сделать домашнюю работу");
+                        String notificationMessageMiss = "Я же показывал как надо, ты забыл? Ладно, напомню: 01.01.2022 20:00 Сделать домашнюю работу";
+                        SendMessage notificationSendMessageMiss = new SendMessage(chatId, notificationMessageMiss);
+                        SendResponse response = telegramBot.execute(notificationSendMessageMiss);
                     }
                 }
 
@@ -87,5 +89,3 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
     }
 
 }
-
-
