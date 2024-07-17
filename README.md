@@ -39,9 +39,6 @@ spring.datasource.username=yourUsername
 spring.datasource.password=yourPassword  
   
 Установите зависимости и соберите проект:  
-mvn clean install  
-  
-Установите зависимости и соберите проект:  
 mvn clean install 
   
 Запустите приложение:  
